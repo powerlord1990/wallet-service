@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: "fill-wallet-table"
+      author: "Ilnaz"
+      changes:
+        - insert:
+            tableName: "wallets"
+            columns:
+              - column:
+                  name: "wallet_id"
+                  value: "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+              - column:
+                  name: "balance"
+                  value: "1000.00"
+        - insert:
+            tableName: "wallets"
+            columns:
+              - column:
+                  name: "wallet_id"
+                  value: "f47ac11b-58cc-4372-a567-0e02b2c3d449"
+              - column:
+                  name: "balance"
+                  value: "1500.00"
